@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "summary": "No critical UI defects detected",
+  "findings": [
+    {
+      "issue": "Minor layout shift in dashboard header",
+      "severity": "low",
+      "impact": "cosmetic only"
+    }
+  ]
+}

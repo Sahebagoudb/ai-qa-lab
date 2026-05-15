@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test ai-visual-lab/tests/staging-smoke.spec.js",
+    "qa:plan": "node ai-visual-lab/ollama-qa-plan.js qa-plans/login-qa-plan-ollama.md",
+    "playwright:install": "playwright install --with-deps"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@playwright/mcp": "^0.0.42",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.2"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.3"
   }
 }

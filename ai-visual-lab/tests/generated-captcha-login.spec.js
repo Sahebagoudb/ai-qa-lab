@@ -1,0 +1,35 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://pp-admin.moniic.com/login');
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('sahebaadmin@yopmail.com');
+  await page.getByRole('button', { name: 'PROCEED' }).click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().locator('[id="0"]').click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().locator('[id="1"]').click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().locator('[id="7"]').click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().locator('[id="1"]').click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().locator('[id="1"]').click();
+  await page.locator('iframe[name="c-dl1vkk5ykgaa"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  await page.locator('#otp_0_8hcou49yyzymp413tjw').fill('2');
+  await page.locator('#otp_1_8hcou49yyzymp413tjw').fill('3');
+  await page.locator('#otp_2_8hcou49yyzymp413tjw').fill('4');
+  await page.locator('#otp_3_8hcou49yyzymp413tjw').fill('8');
+  await page.locator('#otp_4_8hcou49yyzymp413tjw').fill('7');
+  await page.locator('#otp_5_8hcou49yyzymp413tjw').fill('6');
+  await page.locator('#otp_5_8hcou49yyzymp413tjw').click();
+  await page.getByRole('button', { name: 'PROCEED' }).click();
+  await page.getByRole('link', { name: 'Customers' }).click();
+  await page.getByText('Partners .a { fill: #f0f2f5').click();
+  await page.getByRole('link', { name: 'Car' }).click();
+  await page.getByRole('link', { name: 'Yachts' }).click();
+  await page.getByRole('link', { name: 'Rentals' }).click();
+  await page.getByText('Assets .a { fill: #f0f2f5').click();
+  await page.getByText('Assets .a { fill: #f0f2f5').click();
+  await page.locator('a').filter({ hasText: '.a, .b { fill: #fff; } .b {' }).click();
+  await page.getByRole('link', { name: 'Dashboard' }).click();
+  await page.getByText('Yacht', { exact: true }).click();
+  await page.locator('section').getByText('Rental').click();
+  await page.locator('section').getByText('Customers').click();
+});

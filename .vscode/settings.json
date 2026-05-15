@@ -1,0 +1,7 @@
+{
+  "playwright.configFilePath": "playwright.config.js",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.git": true
+}
+}

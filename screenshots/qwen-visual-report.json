@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "summary": "```json\n{\n  \"status\": \"In Progress\",\n  \"summary\": \"Comparison between baseline and current UI screenshots identified several actionable defects that need to be addressed.\",\n  \"findings\": [\n    {\n      \"issue\": \"Layout Shifts\",\n      \"severity\": \"High\",\n      \"impact\": \"The layout has shifted from the baseline, potentially causing confusion or difficulty in navigating the login process.\"\n    },\n    {\n      \"issue\": \"Missing Controls\",\n      \"severity\": \"Medium\",\n      \"impact\": \"A necessary control (e.g., a ",
+  "findings": [
+    {
+      "issue": "AI returned non-JSON output; check model response",
+      "severity": "info",
+      "impact": "low"
+    }
+  ]
+}

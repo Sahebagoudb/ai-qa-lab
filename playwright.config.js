@@ -13,7 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: './ai-visual-lab/tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -31,7 +31,15 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    
+    /* Slow down execution for better visibility */
+    slowMo: 2000,
   },
+  
+  /* Increase timeout for slower execution */
+  timeout: 120000,
+
+  testIgnore: ['**/generated-*.spec.js'],
 
   /* Configure projects for major browsers */
   projects: [
