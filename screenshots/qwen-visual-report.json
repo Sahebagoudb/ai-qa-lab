@@ -1,6 +1,6 @@
 {
   "status": "success",
-  "summary": "```json\n{\n  \"status\": \"In Progress\",\n  \"summary\": \"Comparison between baseline and current UI screenshots identified several actionable defects that need to be addressed.\",\n  \"findings\": [\n    {\n      \"issue\": \"Layout Shifts\",\n      \"severity\": \"High\",\n      \"impact\": \"The layout has shifted from the baseline, potentially causing confusion or difficulty in navigating the login process.\"\n    },\n    {\n      \"issue\": \"Missing Controls\",\n      \"severity\": \"Medium\",\n      \"impact\": \"A necessary control (e.g., a ",
+  "summary": "```json\n{\n  \"status\": \"incomplete\",\n  \"summary\": \"Initial comparison shows that the current UI does not match the baseline screenshot, indicating potential layout shifts, missing controls, overlapping elements, and other issues.\",\n  \"findings\": [\n    {\n      \"issue\": \"Layout shifts detected\",\n      \"severity\": \"high\",\n      \"impact\": \"Users may experience difficulties navigating the interface due to changes in layout.\"\n    },\n    {\n      \"issue\": \"Missing control for CAPTCHA verification\",\n      \"severity\":",
   "findings": [
     {
       "issue": "AI returned non-JSON output; check model response",
